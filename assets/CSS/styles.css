@@ -1362,7 +1362,9 @@ hr{
 	border-right: 1px solid rgb(231, 227, 227);
 	min-width: 550px;
 }
-
+.donhang table td{
+	padding: 0 8px;
+}
 .img-giohang{
 	width: 76px;
 	height: 76px;
@@ -1969,6 +1971,9 @@ hr{
     height:2.2rem;
     width:1.7rem;
     border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
 }
 .is-form.minus {
     border-radius:4px 0 0 4px;
