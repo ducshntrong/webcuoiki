@@ -1179,7 +1179,7 @@ hr{
  }
 
  .submit{
- 	width: 80px;
+ 	width: 75px;
 	height: 40px;
 	color: var(--white-color);
 	background-color: var(--primary-color);
@@ -1205,7 +1205,7 @@ hr{
 }
 
 .baohanh-nav{
-	min-width: 1200px;
+	min-width: 1166px;
 	height: 80px;
 	margin: 0 180px;
 	display: flex;
@@ -1264,7 +1264,7 @@ hr{
 }
 
 .search-dichvu input{
-	width: 195px;
+	width: 165px;
 	height: 40px;
 	border-radius: 4px;
 	border: none;
@@ -1273,11 +1273,14 @@ hr{
 }
 
 .baohanh-text{
-	min-width: 1200px;
-	margin: 0 180px;
+	width: 100%;
 	margin-top: 18px;
+}
+
+.baohanh-text-child{
 	background-color: var(--white-color);
 	padding: 20px;
+	margin: 0px 181px;
 }
 
 .baohanh-text h2 {
