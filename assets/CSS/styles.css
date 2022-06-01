@@ -155,15 +155,22 @@ body{
 	line-height: 45px;
 }
 
+.subnav li{
+	border-bottom: 1px solid #666;
+}
+
 .divnav{
 	display: inline-flex;
 	width: 700px;
 	height: 460px;
 	padding-top: 20px;
 }
-
+.divnav li{
+	border-bottom: 1px solid rgb(227, 226, 226);
+}
 .child{
 	width: 170px;
+	padding: 0 10px;
 }
 .xemaydien h3{
 	margin: 0px 12px;
