@@ -52,6 +52,11 @@ $(document).ready(function() {
 		$('.shopping-cart').css('display', 'block')
 		$('.cart-container').css('display', 'none')
 	})
+	$('.quick-view').click(function(e) {
+		$('.shopping-cart').css('display', 'flex')
+		$('.shopping-cart').css('display', 'block')
+		$('.cart-container').css('display', 'none')
+	})
 	$('.themvaogio2').click(function(e) {
 		$('.shopping-cart').css('display', 'flex')
 		$('.shopping-cart').css('display', 'block')

@@ -232,6 +232,7 @@ body{
 }
 #btn-cart{
 	cursor: pointer;
+	width: 25px;
 }
 
 .btn-cart-a{
