@@ -55,7 +55,7 @@
 
 /* button */
 .btn{
-	min-width: 130px;
+	width: 15%;
 	height: 30px;
 	text-decoration: none;
 	border: none;
@@ -94,7 +94,7 @@
 /* Seclection */
 .select-input{
 	position: relative;
-	min-width: 200px;
+	width: 20%;
 	height: 30px;
 	padding: 0 15px;
 	border-radius: 2px;

@@ -946,7 +946,7 @@ h5{
 }
 /* Cửa hàng */
 .content-cuahang{
-	min-width: 1200px;
+	width: 100%;
 	height: 250px;
 	margin: 0 159px;
 	margin-top: 30px;
@@ -969,11 +969,11 @@ h5{
 }
 
 .col1{
-	width: 400px;
+	width: 30%;
 	height: 160px;
 }
 .col2{
-	width: 400px;
+	width: 50%;
 	height: 160px;
 	padding-left: 50px;
 }
@@ -1090,7 +1090,11 @@ hr{
 .content-lienhe{
 	width: 100%;
 	height: 700px;
-	margin: 110px 250px;
+	/* margin: 110px 250px; */
+}
+
+.content-lienhe-child{
+	margin: 80px 240px;
 }
 
 .form-lienhe{
@@ -1098,7 +1102,7 @@ hr{
 }
 
 .form{
-	width: 510px;
+	width: 50%;
 	height: 700px;
 }
 
@@ -1152,9 +1156,10 @@ hr{
 	border: 1px solid #C5C5C5;
 	padding-left: 5px;
 	font-size: 1.4rem;
+	width: 100%;
  }
 .text{
-	width: 500px;
+	width: 100%;
 	height: 60px;
 	border-radius: 6px;
 	border: none;
@@ -1712,7 +1717,7 @@ hr{
 }
 
 .home-filter{
-	min-width: 1065px;
+	width: 60%;
 	border-radius: 2px;
 	margin: 0 227px;
 	padding: 12px 22px;
@@ -1757,10 +1762,17 @@ hr{
 	display: none;
 }
 .list-content{
-	min-width: 1065px;
+	width: 70%;
 	margin: 0 227px;
 	display: flex;
 	position: relative;
+}
+.list-content-child{
+	display: flex;
+	width: 100%;
+}
+.list-content-child div{
+	width: 100%;
 }
 .imgchitiet-sp{
 	position: relative;
@@ -1994,14 +2006,14 @@ hr{
 }
 
 .container-chitiet{
-	min-width: 1200px;
+	width: 100%;
 	height: 560px;
 	margin: 0 159px;
 	display: flex;
 }
 
 .slide-chitietsp{
-	width: 480px;
+	width: 31%;
 	height: 100%;
 }
 
@@ -2011,7 +2023,7 @@ hr{
 }
 
 .content-chitiet{
-	width: 444px;
+	width: 29%;
 	height: 100%;
 	padding: 0 15px;
 }
@@ -2124,7 +2136,7 @@ hr{
 /*  */
 
 .sidebar-chitiet{
-	width: 276px;
+	width: 18%;
 	height: 100%;
 }
 .hotline-dathang-chitiet{
@@ -2176,7 +2188,7 @@ hr{
 }
 
 .motasp{
-	width: 1200px;
+	width: 100%;
 	height: 40px;
 	margin: 0 159px;
 }
@@ -2187,18 +2199,18 @@ hr{
 }
 
 .content-mtsp-chitiet{
-	width: 1200px;
+	width: 100%;
 	margin: 0 159px;
 	display: flex;
 }
 
 .content-text-mtsp{
-	width: 708px;
+	width: 46%;
 	margin-left: 13px;
 }
 
 .content-text-mtsp p img{
-	width: 708px;
+	width: 100%;
 	height: 450px;
 }
 .content-text-mtsp p{
@@ -2206,14 +2218,14 @@ hr{
 }
 
 .thongsokythuat{
-	width: 402px;
+	width: 27%;
 	height: 630px;
 	border: 2px solid var(--primary-color);
 	margin-left: 65px;
 	border-radius: 10px;
 }
 .thongsokythuat1{
-	width: 402px;
+	width: 27%;
 	height: 730px;
 	border: 2px solid var(--primary-color);
 	margin-left: 65px;
