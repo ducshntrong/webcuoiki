@@ -45,12 +45,14 @@ function cartTotal1() {
 		// console.log(newsProductPrice)
 		totalA1 = newsProductPrice1*inputValue1
 		totalC1 = totalC1+totalA1
-		totalB1 = totalC1.toLocaleString('de-DE')//Tổng tiền của all sp
 		totalD1 = totalA1.toLocaleString('de-DE')//Tổng tiền của sp
 	}
 	
 	var cartTotalA1 = document.querySelector(".num-soluong strong span")
-	cartTotalA1.innerHTML = totalB1
+	var cartPrice1 = document.querySelector(".lg-sp-Cart-price span")
+	cartTotalA1.innerHTML = totalC1.toLocaleString('de-DE')
+	cartPrice1.innerHTML = totalC1.toLocaleString('de-DE')
+	inputChange1()
 }
 // Xoá sp trong cart
 function deleteCart1(){
@@ -64,5 +66,18 @@ function deleteCart1(){
             console.log(cartItems1)
 			cartTotal1()
         })
+	}
+}
+
+function inputChange1() {
+	var cartItem1 = document.querySelectorAll(".donhang tbody tr")
+    for (var i=0; i<cartItem1.length;i++){
+		var inputValue1 = cartItem1[i].querySelector(".donhang input")
+		var capnhatsp1 = document.querySelector(".btn-capnhatcart")
+		capnhatsp1.addEventListener("click", function(){
+			inputValue1.addEventListener("change", function(){
+			})
+			cartTotal1()
+		})
 	}
 }

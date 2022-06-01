@@ -57,16 +57,128 @@ $(document).ready(function() {
 		$('.shopping-cart').css('display', 'block')
 		$('.cart-container').css('display', 'none')
 	})
-	//cart
-	// $('.close-form1').click(function(e) {
-	// 	$('.giohang').css('display', 'none')
-	// })
-	// $('#btn-cart').click(function(e) {
-	// 	$('.giohang').css('display', 'block')
-	// })
-	// $('.btn-xemsp').click(function(e) {
-	// 	$('.giohang').css('display', 'none')
-	// })
+	// Lọc sp
+	$('.btnphobien').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'block')
+		$('.list3').css('display', 'none')
+		$('.btnphobien').css('background-color', '#036D03')
+		$('.btnphobien').css('color', '#fff')
+		$('.btn-primary').css('background-color', '#fff')
+		$('.btnbanchay').css('background-color', '#fff')
+		$('.btn-primary').css('color', '#000')
+		$('.btnbanchay').css('color', '#000')
+	})
+	$('.btn-primary').click(function(e) {
+		$('.list1').css('display', 'block')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'none')
+		$('.btn-primary').css('background-color', '#036D03')
+		$('.btn-primary').css('color', '#fff')
+		$('.btnphobien').css('background-color', '#fff')
+		$('.btnbanchay').css('background-color', '#fff')
+		$('.btnphobien').css('color', '#000')
+		$('.btnbanchay').css('color', '#000')
+	})
+	$('.btnbanchay').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'block')
+		$('.btnbanchay').css('background-color', '#036D03')
+		$('.btnbanchay').css('color', '#fff')
+		$('.btn-primary').css('background-color', '#fff')
+		$('.btnphobien').css('background-color', '#fff')
+		$('.btnphobien').css('color', '#000')
+		$('.btn-primary').css('color', '#000')
+	})
+
+	$('.thapdencao').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'block')
+		$('.list3').css('display', 'none')
+	})
+	$('.caodenthap').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'block')
+	})
+
+	// Chuyển trang
+	$('.num1').click(function(e) {
+		$('.list1').css('display', 'block')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'none')
+		$('.num1').css('background-color', '#036D03')
+		$('.num2').css('background-color', '#fff')
+		$('.num3').css('background-color', '#fff')
+		$('.num4').css('background-color', '#fff')
+		$('.num5').css('background-color', '#fff')
+		$('.number2').css('color', '#555')
+		$('.number3').css('color', '#555')
+		$('.number4').css('color', '#555')
+		$('.number5').css('color', '#555')
+		$('.number1').css('color', '#fff')
+	})
+	$('.num2').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'block')
+		$('.list3').css('display', 'none')
+		$('.num2').css('background-color', '#036D03')
+		$('.num1').css('background-color', '#fff')
+		$('.num3').css('background-color', '#fff')
+		$('.num4').css('background-color', '#fff')
+		$('.num5').css('background-color', '#fff')
+		$('.number1').css('color', '#555')
+		$('.number3').css('color', '#555')
+		$('.number2').css('color', '#fff')
+		$('.number4').css('color', '#555')
+		$('.number5').css('color', '#555')
+	})
+	$('.num3').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'block')
+		$('.num3').css('background-color', '#036D03')
+		$('.num2').css('background-color', '#fff')
+		$('.num1').css('background-color', '#fff')
+		$('.num4').css('background-color', '#fff')
+		$('.num5').css('background-color', '#fff')
+		$('.number1').css('color', '#555')
+		$('.number2').css('color', '#555')
+		$('.number3').css('color', '#fff')
+		$('.number4').css('color', '#555')
+		$('.number5').css('color', '#555')
+	})
+	$('.num4').click(function(e) {
+		$('.list1').css('display', 'none')
+		$('.list2').css('display', 'block')
+		$('.list3').css('display', 'none')
+		$('.num4').css('background-color', '#036D03')
+		$('.num2').css('background-color', '#fff')
+		$('.num1').css('background-color', '#fff')
+		$('.num3').css('background-color', '#fff')
+		$('.num5').css('background-color', '#fff')
+		$('.number1').css('color', '#555')
+		$('.number2').css('color', '#555')
+		$('.number4').css('color', '#fff')
+		$('.number3').css('color', '#555')
+		$('.number5').css('color', '#555')
+	})
+	$('.num5').click(function(e) {
+		$('.list1').css('display', 'block')
+		$('.list2').css('display', 'none')
+		$('.list3').css('display', 'none')
+		$('.num5').css('background-color', '#036D03')
+		$('.num2').css('background-color', '#fff')
+		$('.num1').css('background-color', '#fff')
+		$('.num4').css('background-color', '#fff')
+		$('.num3').css('background-color', '#fff')
+		$('.number1').css('color', '#555')
+		$('.number2').css('color', '#555')
+		$('.number5').css('color', '#fff')
+		$('.number4').css('color', '#555')
+		$('.number3').css('color', '#555')
+	})
 })
 
 
@@ -170,12 +282,18 @@ function cartTotal() {
 		totalA = newsProductPrice*inputValue
 		totalC = totalC+totalA
 		totalD = totalA.toLocaleString('de-DE')//Tổng tiền của sp
+		var cartPricesp = document.querySelector(".product-total .gia-giam")
+		cartPricesp.innerHTML = totalD
 	}
-	
+
 	var cartTotalA = document.querySelector(".num-soluong strong span")
 	cartTotalA.innerHTML = totalC.toLocaleString('de-DE')//Tổng tiền của all sp
+	var cartPrice = document.querySelector(".lg-sp-Cart-price span")
+	cartPrice.innerHTML = totalC.toLocaleString('de-DE')
+
 	inputChange()
 }
+
 
 // Xoá sp trong cart
 function deleteCart(){
@@ -189,6 +307,10 @@ function deleteCart(){
 			console.log(cartItems)
 			cartTotal()
         })
+		// productT.addEventListener("click", function(){
+		// 	document.querySelector(".shopping-cart").style.display = "none"
+		// 	document.querySelector(".cart-container").style.display = "block"
+		// })
 	}
 }
 
@@ -211,15 +333,14 @@ cartShow.addEventListener("click", function(){
 })
 const cartClose = document.querySelector(".close-form1")
 cartClose.addEventListener("click", function(){
-	document.querySelector(".giohang").style.right = "-100%"
+	document.querySelector(".giohang").style.right = "-300%"
 })
 
 const cartBack = document.querySelector(".btn-xemsp")
 cartBack.addEventListener("click", function(){
-	document.querySelector(".giohang").style.right = "-100%"
+	document.querySelector(".giohang").style.right = "-300%"
 })
 const btnBackhome = document.querySelector(".buttton-backshop")
 btnBackhome.addEventListener("click", function(){
-	document.querySelector(".giohang").style.right = "-100%"
+	document.querySelector(".giohang").style.right = "-300%"
 })
-

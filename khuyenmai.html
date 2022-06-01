@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sales - Duc.bike</title>
+	<title>Sản phẩm - Duc.bike</title>
 	<link rel="stylesheet" href="./assets/CSS/styles.css">
 	<link rel="stylesheet" href="./assets/CSS/base.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
@@ -32,7 +32,7 @@
 					<div id="nava">
 						<ul id="nav">
 							<li>
-								<a href="index.html">Sản phẩm</a>
+								<a href="index.html">Trang chủ</a>
 								<ul class="subnav">
 										<div class="divnav">
 											<div class="xemaydien child">
@@ -81,7 +81,7 @@
 										</div>
 								</ul>
 							</li>
-							<li><a href="khuyenmai.html">Khuyến mãi</a></li> 
+							<li><a href="khuyenmai.html">Sản phẩm</a></li> 
 							<li><a href="dichvu.html">Dịch vụ</a></li>
 							<li><a href="cuahang.html">Cửa hàng</a></li>
 							<li><a href="lienhe.html">Liên hệ</a></li>
@@ -112,9 +112,9 @@
             </div>
             <div class="home-filter">
                 <span class="home-filter__label">Sắp xếp theo</span>
-                <button class="home-filter__btn btn">Phổ biến</button>
+                <button class="home-filter__btn btn btnphobien">Phổ biến</button>
                 <button class="home-filter__btn btn btn-primary">Mới nhất</button>
-                <button class="home-filter__btn btn">Bán chạy</button>
+                <button class="home-filter__btn btn btnbanchay">Bán chạy</button>
 
                 <div class="select-input">
                     <span class="select-input__label">Giá</span>
@@ -122,334 +122,274 @@
                     <!-- List option -->
                     <ul class="select-input__list">
                         <li class="select-input__item">
-                            <a href="khuyenmai2.html" class="select-input__link">Giá: Thấp đến Cao</a>
+                            <a class="select-input__link thapdencao">Giá: Thấp đến Cao</a>
                         </li>
                         <li class="select-input__item">
-                            <a href="khuyenmai3.html" class="select-input__link">Giá: Cao đến Thấp</a>
+                            <a class="select-input__link caodenthap">Giá: Cao đến Thấp</a>
                         </li>
                     </ul>
                 </div>
             </div>
-			<div class="list-content">
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
-								<div class="more">
-									<label for="checkthemvaogio-spxx" href="#" class="quick-view">THÊM VÀO GIỎ</label>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+			<div class="list1">
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
+									<div class="more">
+										<label for="checkthemvaogio-spxx" href="#" class="quick-view">THÊM VÀO GIỎ</label>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
 									</div>
-								</div>
-							</a>
-						</div>
-						<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-spxx">
-						<p class="sanpham-text">
-							<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									16.390.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									15.890.000
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
-								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe máy điện YADEA M6i <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									17.900.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									17.1499.000
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
-								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Đạp Điện E-BIKE DK Miku Max <br>
-								IV – Bánh 18 Inches <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									11.700.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									11.499.000
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches.jpg">
-								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches<br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									14.500.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									14.199.000
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="list-content">
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="YADEAX5.html">
-								<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
-								<div class="more">
-									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									15.900.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									15.590.000VND
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="YADEAX5.html">
-								<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches.jpg">
-								<div class="more">
-									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches<br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									12.900.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									12.590.000
-								</span><sup>đ</sup>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="YADEAX5.html">
-								<img class="imgct" src="assets/img/Xe Máy Điện DK Roma SX.jpg">
-								<div class="more">
-									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Máy Điện DK Roma SX <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									19.990.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									19.400.000
-								</span><sup>đ</sup><br>
-							</strong>
-						</p>
-					</div>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Platinum.jpg">
-								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
-						</div>
-						<p class="sanpham-text">
-							<span>Xe Máy Điện JVC Vespa Platinum <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									17.390.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									16.890.000
-								</span><sup>đ</sup><br>
-							</strong>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="list-content">
-				<div class="boxa">
-					<div class="imgchitiet-sp">
-						<a href="YADEAX5.html">
-							<img class="imgct" src="assets/img/Xe Máy Điện DK XMan X2.jpg">
-							<div class="more">
-								<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
-								<div class="icon-links">
-									<a href="#"><i class="fa-solid fa-heart"></i></a>
-									<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
-									<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-								</div>
+								</a>
 							</div>
-						</a>
-					</div>
-					<p class="sanpham-text">
-						<span>Xe Máy Điện DK XMan X2 <br></span>
-						<strong>
-							<span class="gia-chua-giam">
-								18.390.000
-							</span><sup>đ</sup><br>
-						</strong>
-						<strong>
-							<span class="gia-giam">
-								17.890.000
-							</span><sup>đ</sup><br>
-						</strong>
-					</p>
-				</div>
-
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="chitiet.html">
-								<img class="imgct" src="assets/img/Xe Máy Điện YADEA S3.jpg">
-								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
-									</div>
-								</div>
-							</a>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-spxx">
+							<p class="sanpham-text">
+								<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										16.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										15.890.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
 						</div>
-						<p class="sanpham-text">
-							<span>Xe Máy Điện YADEA S3 <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									21.390.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									20.990.000
-								</span><sup>đ</sup><br>
-							</strong>
-						</p>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe máy điện YADEA M6i <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										17.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										17.1499.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Miku Max <br>
+									IV – Bánh 18 Inches <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										11.700.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										11.499.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.500.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										14.199.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
 					</div>
 				</div>
 
-				<div>
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										15.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										15.590.000VND
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										12.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										12.590.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện DK Roma SX.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện DK Roma SX <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										19.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										19.400.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Platinum.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện JVC Vespa Platinum <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										17.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										16.890.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-content">
 					<div class="boxa">
 						<div class="imgchitiet-sp">
 							<a href="YADEAX5.html">
-								<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
+								<img class="imgct" src="assets/img/Xe Máy Điện DK XMan X2.jpg">
 								<div class="more">
 									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
 									<div class="icon-links">
@@ -461,72 +401,816 @@
 							</a>
 						</div>
 						<p class="sanpham-text">
-							<span>Xe đạp điện YADEA IGO <br></span>
+							<span>Xe Máy Điện DK XMan X2 <br></span>
 							<strong>
 								<span class="gia-chua-giam">
-									14.390.000
+									18.390.000
 								</span><sup>đ</sup><br>
 							</strong>
 							<strong>
 								<span class="gia-giam">
-									13.990.000
+									17.890.000
 								</span><sup>đ</sup><br>
 							</strong>
 						</p>
 					</div>
-				</div>
 
-				<div>
-					<div class="boxa">
-						<div class="imgchitiet-sp">
-							<a href="YADEAX5.html">
-								<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
-								<div class="more">
-									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
-									<div class="icon-links">
-										<a href="#"><i class="fa-solid fa-heart"></i></a>
-										<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
-										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA S3.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA S3 <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										21.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										20.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
 						</div>
-						<p class="sanpham-text">
-							<span>Xe Máy Điện YADEA Ulike <br></span>
-							<strong>
-								<span class="gia-chua-giam">
-									19.390.000
-								</span><sup>đ</sup><br>
-							</strong>
-							<strong>
-								<span class="gia-giam">
-									18.900.000
-								</span><sup>đ</sup><br>
-							</strong>
-						</p>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe đạp điện YADEA IGO <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										13.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA Ulike <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										19.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										18.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- list 2 -->
+			<div class="list2">
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Miku Max IV<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										11.700.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										11.499.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
 
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện HITASA 18IM.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện HITASA 18IM <br></span>
+								<strong>
+									<span class="gia-giam">
+										13.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe đạp điện YADEA IGO <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										13.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.500.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										14.199.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										15.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										15.590.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA E3.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA E3 <br></span>
+								<strong>
+									<span class="gia-giam">
+										16.490.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="boxa">
+						<div class="imgchitiet-sp">
+							<a href="YADEAX5.html">
+								<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA V1.jpg">
+								<div class="more">
+									<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+									<div class="icon-links">
+										<a href="#"><i class="fa-solid fa-heart"></i></a>
+										<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+										<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<p class="sanpham-text">
+							<span>Xe Máy Điện E-SCOOTER YADEA V1<br></span>
+							<strong>
+								<span class="gia-giam">
+									14.490.000
+								</span><sup>đ</sup><br>
+							</strong>
+						</p>
+					</div> 
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5 Lite.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện E-SCOOTER YADEA X5 Lite<br></span>
+								<strong>
+									<span class="gia-giam">
+										16.490.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA XMen Neo.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA XMen Neo <br></span>
+								<strong>
+									<span class="gia-giam">
+										17.590.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe máy điện YADEA M6i <br></span>
+								<strong>
+									<span class="gia-giam">
+										17.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA Odora.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện E-SCOOTER YADEA Odora <br></span>
+								<strong>
+									<span class="gia-giam">
+										18.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div> 
+					</div>
+
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text"> 
+								<span>Xe Máy Điện E-SCOOTER YADEA X5 <br></span>
+								<strong>
+									<span class="gia-giam">
+										21.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div> 
+					</div>
+				</div>
+			</div>
+			<!-- list 3 -->
+			<div class="list3">
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện E-SCOOTER YADEA X5 <br></span>
+								<strong>
+									<span class="gia-giam">
+										21.990.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div> 
+					</div> 
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA Odora.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện E-SCOOTER YADEA Odora <br></span>
+								<strong>
+									<span class="gia-giam">
+										18.990.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div> 
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe máy điện YADEA M6i <br></span>
+								<strong>
+									<span class="gia-giam">
+										17.990.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA XMen Neo.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA XMen Neo <br></span>
+								<strong>
+									<span class="gia-giam">
+										17.590.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5 Lite.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện E-SCOOTER YADEA X5 Lite<br></span>
+								<strong>
+									<span class="gia-giam">
+										16.490.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Máy Điện YADEA E3.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Máy Điện YADEA E3 <br></span>
+								<strong>
+									<span class="gia-giam">
+										16.490.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										15.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										15.590.000
+									</span><sup>đ</sup>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.500.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										14.199.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="list-content">
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe đạp điện YADEA IGO <br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										14.390.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										13.990.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện HITASA 18IM.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện HITASA 18IM <br></span>
+								<strong>
+									<span class="gia-giam">
+										13.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="chitiet.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches.jpg">
+									<div class="more">
+										<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK 133M<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										12.900.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										12.590.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+	
+					<div>
+						<div class="boxa">
+							<div class="imgchitiet-sp">
+								<a href="YADEAX5.html">
+									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
+									<div class="more">
+										<a href="YADEAX5.html" class="quick-view">THÊM VÀO GIỎ</a>
+										<div class="icon-links">
+											<a href="#"><i class="fa-solid fa-heart"></i></a>
+											<a href="YADEAX5.html"><i class="fa-solid fa-eye"></i></a>
+											<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+										</div>
+									</div>
+								</a>
+							</div>
+							<p class="sanpham-text">
+								<span>Xe Đạp Điện E-BIKE DK Miku Max IV<br></span>
+								<strong>
+									<span class="gia-chua-giam">
+										11.700.000
+									</span><sup>đ</sup><br>
+								</strong>
+								<strong>
+									<span class="gia-giam">
+										11.499.000
+									</span><sup>đ</sup><br>
+								</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="content-number">
 				<div class="content-number-child">
 					<div class="button-circles num1">
-						<a href="khuyenmai.html" class="button-circle-num number1">1</a>
+						<a class="button-circle-num number1">1</a>
+					</div>
+					<div class="button-circles num2">
+						<a class="button-circle-num number2">2</a>
+					</div>
+					<div class="button-circles num3">
+						<a class="button-circle-num number3">3</a>
+					</div>
+					<div class="button-circles num4">
+						<a class="button-circle-num number4">4</a>
+					</div>
+					<div class="button-circles num5">
+						<a class="button-circle-num number5">5</a>
 					</div>
 					<div class="button-circles">
-						<a href="khuyenmai2.html" class="button-circle-num">2</a>
-					</div>
-					<div class="button-circles">
-						<a href="khuyenmai3.html" class="button-circle-num">3</a>
-					</div>
-					<div class="button-circles">
-						<a href="" class="button-circle-num">4</a>
-					</div>
-					<div class="button-circles">
-						<a href="" class="button-circle-num">5</a>
-					</div>
-					<div class="button-circles">
-						<a href="" class="button-circle-num">
+						<a class="button-circle-num">
 							<i class="fa-solid fa-angle-right"></i>
 						</a>
 					</div>

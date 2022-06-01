@@ -222,10 +222,18 @@ body{
 	width: 38px;
 	height: 28px;
 	margin: auto;
-	padding: 0 5px;
 }
 #btn-cart{
 	cursor: pointer;
+}
+
+.btn-cart-a{
+	display: flex;
+}
+.lg-sp-Cart-price{
+	margin-left: -7px;
+	color: var(--white-color);
+
 }
 
 /* mobile nav */
@@ -1492,19 +1500,23 @@ hr{
 .thanhtoan-giohang table{
 	width: 500px;
 }
-.thanhtoan-giohang .thanhtoan-giohang-sl-tp{
-	text-align: left;
-}
+
 .thanhtoan-giohang-sl-tp{
 	text-align: left;
 	padding-left: 10px;
+}
+.thanhtoan-giohang-sl-tp1{
+	text-align: left;
+	padding-left: 10px;
+	border-bottom: 1px solid #ddd;
 }
 .thanhtoan-giohang .num-soluong{
 	text-align: right;
 }
 .num-soluong1{
-	text-align: right;
+	text-align: center;
 	color: #000;
+	border-bottom: 1px solid #ddd;
 }
 .thanhtoan-giohang table tr th{
 	border-bottom: 1px solid #ddd;
@@ -1543,8 +1555,8 @@ hr{
 	background-color: rgb(187 214 175);
 	z-index: 9999999;
 	overflow-y: scroll;
-	right: -100%;
-	transition: all 0.5s ease;
+	right: -300%;
+	transition: all 0.8s ease;
 }
 /*  */
 
@@ -1730,6 +1742,15 @@ hr{
 }
 
 /* ------ */
+.list1{
+	/* display: none; */
+}
+.list2{
+	display: none;
+}
+.list3{
+	display: none;
+}
 .list-content{
 	min-width: 1065px;
 	margin: 0 227px;
@@ -1777,7 +1798,9 @@ hr{
 .check-themvaogio{
 	display: none;
 }
-
+.select-input__item{
+	cursor: pointer;
+}
 /*  */
 .boxd-child{
 	position: relative;
@@ -1890,8 +1913,13 @@ hr{
 	cursor: pointer;
 	margin: 0 5px;
 }
-
-.num1, .num2, .num3{
+.num1{
+	background-color: var(--primary-color);
+}
+.num1 .number1{
+	color: var(--white-color);
+}
+/* .num1, .num2, .num3{
 	background-color: var(--primary-color);
 } 
 .num1 .number1{
@@ -1902,7 +1930,7 @@ hr{
 }
 .num3 .number3{
 	color: var(--white-color);
-}
+} */
 
 .button-circles:hover {
 	background-color: #446084;
