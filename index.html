@@ -10,10 +10,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="assets/fonts/"> -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
 	<link rel="icon" href="assets/img/Screenshot 2022-05-13 173748.png">
-	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="./assets/js/slick.min.js"></script>
-	<script type="text/javascript" src="./assets/js/main.js"></script>
+
 </head>
 <body>
 	<div id="main">
@@ -97,7 +94,7 @@
 
 					<div class="login-shopping">
 						<div id="btn-login"><a href="#"><img src="assets/img/login.png"></a></div>
-						<div><a href="giohang.html" title="Cart"><img src="assets/img/shopping.png"></a></div>
+						<div id="btn-cart"><a title="Cart"><img src="assets/img/shopping.png"></a></div>
 					</div>
 				</div>
 			</div>
@@ -157,19 +154,97 @@
             	</button>
             </div>
 
+			<!-- --------- -->
+			<div class="giohang">
+				<i class="fa-solid fa-xmark close-form1"></i>
+				<div class="content-giohang">
+					<div class="float-contact">
+						<button class="hotline">
+							<a href="https://www.facebook.com/ken7103/" target="_blank" id="click-phone"></a>
+						</button>
+						<button class="send-email">
+							<a href="https://mail.google.com/mail/u/0/?fs=1&to=ducht.21it@vku.udn.vn&tf=cm" target="_blank"></a>
+						</button>
+						<button class="chat-face">
+							<a href="https://www.facebook.com/ken7103/" target="_blank" id="click-msg"></a>
+						</button>
+					</div>
+					<nav class="nav-giohang">
+						<a href="" class="sp-cart">SHOPPING CART</a>
+						<span class="divider hide-for-small">
+							<i class="fa-solid fa-angle-right"></i>
+						</span>
+						<a href="thanhtoan.html" class="check-detail">CHECKOUT DETAILS</a>
+					</nav>
+				</div>
+				<div class="row" id="gachngang">
+						<div></div>
+				</div>
+				<div class="cart-container">
+					<p>Chưa có sản phẩm nào trong giỏ hàng.</p>
+					<p class="return-to-shop">
+						<a class="buttton-backshop">Quay trở lại cửa hàng</a>
+					</p>
+				</div>
+				<div class="shopping-cart">
+					<div class="donhang">
+						<table cellpadding="0">
+							<thead>
+								<tr>
+									<td colspan="3" class="san-pham">SẢN PHẨM</td>
+									<td class="gia">GIÁ</td>
+									<td class="soluong">SỐ LƯỢNG</td>
+									<td class="totalcost">TỔNG</td>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+							<tfoot>
+								<tr>
+									<th class="thanhtoan-giohang-sl-tp" colspan="5">Tổng phụ</th>
+									<th class="num-soluong">
+										<strong>
+											<span class="gia-giam">
+												0
+											</span><sup>đ</sup><br>
+										</strong>
+									</th>
+								</tr>
+							</tfoot>
+						</table>
+						<div class="ththanhtoan">
+							<a href="thanhtoan.html" class="btn-ththanhtoan">
+								Tiến hành thanh toán
+							</a>
+						</div>
+		
+						<div class="xemsp-capnhat">
+							<div class="ttxemsp">
+								<a class="btn-xemsp">
+									<i class="fa-solid fa-arrow-left-long"></i>
+									Tiếp tục xem sản phẩm
+								</a>
+							</div>
+							<button class="btn-capnhatcart" type="submit" name="update-cart" value="Update cart">
+								Cập nhật giỏ hàng
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 			<div class="product-hot">
 				<img class="img-produc-hot" src="assets/img/sanphamnoibat4.png">
 			</div>
-
-
-			<!-- --------- -->
 			<div class="sanphamnoibat">
 				<div class="boxc">
 					<div class="boxc-child">
 						<a href="YADEAX5.html">
-							<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA V1.jpg">
+							<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER YADEA V1.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp1" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -178,6 +253,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp1">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện E-SCOOTER YADEA V1<br></span>
 						<strong>
@@ -193,7 +269,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5 Lite.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp2" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -202,6 +278,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp2">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện E-SCOOTER YADEA X5 Lite<br></span>
 						<strong>
@@ -217,7 +294,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp3" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -226,6 +303,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp3">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện E-SCOOTER YADEA X5 <br></span>
 						<strong>
@@ -240,7 +318,7 @@
 						<a href="chitiet.html">
 							<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA Odora.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp4" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -249,6 +327,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp4">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện E-SCOOTER YADEA Odora <br></span>
 						<strong>
@@ -263,7 +342,7 @@
 						<a href="chitiet.html">
 							<img class="imgct"src="assets/img/Xe Máy Điện DK Roma SX.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp5" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -272,6 +351,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp5">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện DK Roma SX <br></span>
 						<strong>
@@ -291,7 +371,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp6" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -300,6 +380,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp6">
 					<p class="sanpham-text">
 						<span>Xe Đạp Điện E-BIKE DK Miku Max <br>
 							IV – Bánh 18 Inches <br></span>
@@ -320,7 +401,7 @@
 						<a href="chitiet.html">
 							<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Platinum.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp7" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -329,6 +410,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp7">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện JVC Vespa Platinum <br></span>
 						<strong>
@@ -348,7 +430,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp8" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -357,6 +439,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp8">
 					<p class="sanpham-text">
 						<span>Xe đạp điện YADEA IGO <br></span>
 						<strong>
@@ -371,7 +454,7 @@
 						<a href="chitiet.html">
 							<img class="imgct" src="assets/img/Xe Đạp Điện HITASA 18IM.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp9" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -380,6 +463,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp9">
 					<p class="sanpham-text">
 						<span>Xe Đạp Điện HITASA 18IM <br></span>
 						<strong>
@@ -394,7 +478,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct" src="assets/img/Xe Máy Điện YADEA XMen Neo.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp10" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -403,6 +487,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp10">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện JVC Vespa Platinum <br></span>
 						<strong>
@@ -417,7 +502,7 @@
 						<a href="YADEAX5.html">
 							<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp11" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -426,6 +511,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp11">
 					<p class="sanpham-text">
 						<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
 						<strong>
@@ -445,7 +531,7 @@
 						<a href="chitiet.html">
 							<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp12" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -454,6 +540,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp12">
 					<p class="sanpham-text">
 						<span>Xe máy điện YADEA M6i <br></span>
 						<strong>
@@ -468,7 +555,7 @@
 						<a href="chitiet.html">
 							<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
 							<div class="more">
-								<a href="chitiet.html" class="themvaogio">THÊM VÀO GIỎ</a>
+								<label for="checkthemvaogio-sp13" href="#" class="themvaogio">THÊM VÀO GIỎ</label>
 								<div class="icon-link">
 									<a href="#"><i class="fa-solid fa-heart"></i></a>
 									<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -477,6 +564,7 @@
 							</div>
 						</a>
 					</div>
+					<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp13">
 					<p class="sanpham-text">
 						<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
 						<strong>
@@ -532,6 +620,7 @@
 						</strong>
 					</p>
 				</div> 
+			
 				<div class="boxb">
 					<div class="sanphamnoibat1">
 						<div class="boxd">
@@ -539,7 +628,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện HITASA 18IM.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp14" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -548,6 +637,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp14">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện HITASA 18IM <br></span>
 								<strong>
@@ -562,7 +652,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp15" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -571,6 +661,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp15">
 							<p class="sanpham-text">
 								<span>Xe đạp điện YADEA IGO <br></span>
 								<strong>
@@ -585,7 +676,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp16" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -594,6 +685,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp16">
 							<p class="sanpham-text"> 
 								<span>Xe Đạp Điện E-BIKE DK Miku Max IV<br></span>
 								<strong>
@@ -613,7 +705,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Sparta – Bánh 16 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp17" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -622,6 +714,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp17">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Sparta<br></span>
 								<strong>
@@ -641,7 +734,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp18" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -650,6 +743,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp18">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Samurai III<br></span>
 								<strong>
@@ -669,7 +763,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK 133 M – Bánh 16 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp19" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -678,6 +772,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp19">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK 133M<br></span>
 								<strong>
@@ -737,7 +832,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA XMen Neo.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp20" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -746,6 +841,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp20">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA XMen Neo <br></span>
 								<strong>
@@ -760,7 +856,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA E3.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp21" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -769,6 +865,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp21">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA E3 <br></span>
 								<strong>
@@ -783,7 +880,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp22" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -792,6 +889,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp22">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA Ulike <br></span>
 								<strong>
@@ -806,7 +904,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp23" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -815,6 +913,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp23">
 							<p class="sanpham-text">
 								<span>Xe máy điện YADEA M6i <br></span>
 								<strong>
@@ -874,7 +973,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp24" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -883,6 +982,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp24">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA Ulike <br></span>
 								<strong>
@@ -897,7 +997,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER DK Roma SX.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp25" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -906,6 +1006,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp25">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện DK Roma SX <br></span>
 								<strong>
@@ -925,7 +1026,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp26" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -934,6 +1035,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp26">
 							<p class="sanpham-text"> 
 								<span>Xe máy điện YADEA M6i <br></span>
 								<strong>
@@ -948,7 +1050,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp27" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -957,6 +1059,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp27">
 							<p class="sanpham-text">
 								<span>Xe đạp điện YADEA IGO <br></span>
 								<strong>
@@ -971,7 +1074,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp28" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -980,6 +1083,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp28">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches<br></span>
 								<strong>
@@ -999,7 +1103,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA E3.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp29" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1008,6 +1112,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp29">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA E3 <br></span>
 								<strong>
@@ -1062,7 +1167,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện DK Roma SX.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp30" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1071,6 +1176,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp30">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện DK Roma SX <br></span>
 								<strong>
@@ -1090,7 +1196,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp31" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1099,6 +1205,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp31">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA Ulike <br></span>
 								<strong>
@@ -1113,7 +1220,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp32" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1122,6 +1229,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp32">
 							<p class="sanpham-text">
 								<span>Xe máy điện YADEA M6i <br></span>
 								<strong>
@@ -1136,7 +1244,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA E3.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp33" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1145,6 +1253,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp33">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA E3 <br></span>
 								<strong>
@@ -1159,7 +1268,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp34" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1168,6 +1277,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp34">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches<br></span>
 								<strong>
@@ -1227,7 +1337,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA S3.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp35" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1236,6 +1346,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp35">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA S3 <br></span>
 								<strong>
@@ -1250,7 +1361,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Ulike.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp36" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1259,6 +1370,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp36">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA Ulike <br></span>
 								<strong>
@@ -1273,7 +1385,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER DK Roma SX.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp37" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1282,6 +1394,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp37">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện DK Roma SX <br></span>
 								<strong>
@@ -1301,7 +1414,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Platinum.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp38" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1310,6 +1423,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp38">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện JVC Vespa Platinum <br></span>
 								<strong>
@@ -1329,7 +1443,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA Buye.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp39" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1338,6 +1452,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp39">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA Buye. <br></span>
 								<strong>
@@ -1352,7 +1467,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp40" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1361,6 +1476,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp40">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
 								<strong>
@@ -1420,7 +1536,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện HITASA 18IM.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp41" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1429,6 +1545,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp41">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện HITASA 18IM <br></span>
 								<strong>
@@ -1443,7 +1560,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp42" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1452,6 +1569,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp42">
 							<p class="sanpham-text"> 
 								<span>Xe đạp điện YADEA IGO <br></span>
 								<strong>
@@ -1466,7 +1584,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Miku Max IV – Bánh 18 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp43" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1475,6 +1593,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp43">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Miku Max IV<br></span>
 								<strong>
@@ -1494,7 +1613,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA XMen Neo.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp44" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1503,6 +1622,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp44">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA XMen Neo <br></span>
 								<strong>
@@ -1517,7 +1637,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp45" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1526,6 +1646,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp45">
 							<p class="sanpham-text">
 								<span>Xe Đạp Điện E-BIKE DK Samurai III – Bánh 16 Inches<br></span>
 								<strong>
@@ -1545,7 +1666,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5 Lite.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp46" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1554,6 +1675,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp46">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện E-SCOOTER YADEA X5 Lite<br></span>
 								<strong>
@@ -1568,7 +1690,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA X5.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp47" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1577,6 +1699,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp47">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện E-SCOOTER YADEA X5 <br></span>
 								<strong>
@@ -1591,7 +1714,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện DK XMan X2.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp48" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1600,6 +1723,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp48">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện DK XMan X2 <br></span>
 								<strong>
@@ -1659,7 +1783,7 @@
 								<a href="chitiet.html">
 									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA V1.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp49" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1668,6 +1792,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp49">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện E-SCOOTER YADEA V1<br></span>
 								<strong>
@@ -1682,7 +1807,7 @@
 								<a href="chitiet.html">
 									<img class="imgct"src="assets/img/Xe Máy Điện E-SCOOTER YADEA Odora.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp50" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1691,6 +1816,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp50">
 							<p class="sanpham-text"> 
 								<span>Xe Máy Điện E-SCOOTER YADEA Odora <br></span>
 								<strong>
@@ -1705,7 +1831,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Platinum.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp51" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1714,6 +1840,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp51">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện JVC Vespa Platinum <br></span>
 								<strong>
@@ -1733,7 +1860,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe máy điện YADEA M6i.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp52" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1742,6 +1869,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp52">
 							<p class="sanpham-text">
 								<span>Xe máy điện YADEA M6i <br></span>
 								<strong>
@@ -1756,7 +1884,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp53" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1765,6 +1893,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp53">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
 								<strong>
@@ -1784,7 +1913,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện YADEA S3.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp54" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1793,6 +1922,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp54">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện YADEA S3 <br></span>
 								<strong>
@@ -1807,7 +1937,7 @@
 								<a href="YADEAX5.html">
 									<img class="imgct" src="assets/img/Xe đạp điện YADEA IGO.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp55" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1816,6 +1946,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp55">
 							<p class="sanpham-text">
 								<span>Xe đạp điện YADEA IGO <br></span>
 								<strong>
@@ -1830,7 +1961,7 @@
 								<a href="chitiet.html">
 									<img class="imgct" src="assets/img/Xe Máy Điện DK Roma SX.jpg">
 									<div class="more">
-										<a href="chitiet.html" class="themvaogio2">THÊM VÀO GIỎ</a>
+										<label for="checkthemvaogio-sp56" href="#" class="themvaogio2">THÊM VÀO GIỎ</label>
 										<div class="icons-link">
 											<a href="#"><i class="fa-solid fa-heart"></i></a>
 											<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -1839,6 +1970,7 @@
 									</div>
 								</a>
 							</div>
+							<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-sp56">
 							<p class="sanpham-text">
 								<span>Xe Máy Điện DK Roma SX <br></span>
 								<strong>
@@ -1849,7 +1981,7 @@
 								<strong>
 									<span class="gia-giam">
 										19.490.000
-									</span><sup>đ</sup>
+									</span><sup>đ</sup><br>
 								</strong>
 							</p>
 						</div>
@@ -2106,4 +2238,10 @@
 		</div>
 	</div>
 </body>
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/cart2.js"></script>
+	<script type="text/javascript" src="./assets/js/cart3.js"></script>
 </html>

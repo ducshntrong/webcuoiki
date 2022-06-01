@@ -224,7 +224,9 @@ body{
 	margin: auto;
 	padding: 0 5px;
 }
-
+#btn-cart{
+	cursor: pointer;
+}
 
 /* mobile nav */
 .nav-bars-btn{
@@ -561,6 +563,7 @@ input[name="bottom"]{
 }
 .boxc{
 	margin: 0 10px;
+	position: relative;
 }
 .boxc .imgct{
 	width: 100%;
@@ -912,6 +915,17 @@ h5{
 	top: 0;
 	right: 0;
 	cursor: pointer;
+}
+.close-form1{
+	font-size: 2rem;
+	color: #686565;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+.close-form1:hover{
+	color: var(--white-color);
 }
 .close-form:hover{
 	color: var(--white-color);
@@ -1297,11 +1311,11 @@ hr{
 	padding-top: 20px;	
 }
 .nav-giohang{
-	min-width: 1170px;
-	height: 67px;
-	margin: 0 180px;
-	text-align: center; 
-	line-height: 67px;
+	min-width: 470px;
+    height: 65px;
+    margin: 0px 120px;
+    text-align: center;
+    line-height: 67px;
 }
 
 .nav-giohang a{
@@ -1313,7 +1327,7 @@ hr{
 	color: black;
 }
 .check-detail, .order-complete, .fa-angle-right{
-	color: #ccc;
+	color: #958d8d;;
 }
 
 .fa-angle-right{
@@ -1325,7 +1339,6 @@ hr{
 }
 
 .cart-container{
-	min-width: 1200px;
 	min-height: 200px;
 	margin: 0 159px;
 	padding: 30px 15px;
@@ -1343,6 +1356,7 @@ hr{
 	color: var(--white-color);
 	padding: 10px 28px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .buttton-backshop:hover{
 	background-color: #025702;
@@ -1353,23 +1367,32 @@ hr{
 
 .shopping-cart{
 	width: 100%;
-	margin: 0 159px;
-	padding: 15px;
-	display: flex;
+	padding: 5px;
+	display: none;
 }
 
 .donhang{
-	border-right: 1px solid rgb(231, 227, 227);
-	min-width: 550px;
+	width: 100%;
+}
+.donhang table{
+	width: 80%;
+	margin: auto;
 }
 .donhang table td{
 	padding: 0 8px;
 }
+.donhang table tr td{
+	border-bottom: 1px solid #ddd;
+	padding: 12px 10px;
+}
+
 .img-giohang{
 	width: 76px;
 	height: 76px;
 }
-
+.product-namesp{
+	width: 130px;
+}
 .product-namesp a{
 	text-decoration: none;
 	color: #000;
@@ -1383,6 +1406,16 @@ hr{
 
 .donhang table tr{
 	/* text-align: center; */
+}
+
+.product-icon, .product-img, .product-namesp, .product-price{
+	text-align: left;
+}
+.product-quality{
+	text-align: center;
+}
+.product-total{
+	text-align: right;
 }
 
 .san-pham{
@@ -1410,21 +1443,26 @@ hr{
 }
 .fa-circle-xmark:hover{
 	color: #333;
+	cursor: pointer;
 }
 
 .xemsp-capnhat{
 	display: flex;
+	padding-top: 15px;
+	justify-content: center;
 }
 
 .btn-xemsp{
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 6px 25px;
 	border: 2px solid var(--primary-color);
-	margin-left: 10px;
 	color: var(--primary-color);
 	font-weight: bold;
 	font-size: 0.85rem;
+	display: block;
+    width: 100%;
+	cursor: pointer;
+    padding: 2px;
 }
 .btn-xemsp:hover{
 	color: var(--white-color);
@@ -1451,27 +1489,65 @@ hr{
 	min-width: 550px;
 	margin-left: 30px;
 }
-
+.thanhtoan-giohang table{
+	width: 500px;
+}
+.thanhtoan-giohang .thanhtoan-giohang-sl-tp{
+	text-align: left;
+}
+.thanhtoan-giohang-sl-tp{
+	text-align: left;
+	padding-left: 10px;
+}
+.thanhtoan-giohang .num-soluong{
+	text-align: right;
+}
+.num-soluong1{
+	text-align: right;
+	color: #000;
+}
+.thanhtoan-giohang table tr th{
+	border-bottom: 1px solid #ddd;
+	padding: 12px 4px;
+}
 .num-soluong{
-	padding-left: 270px;
 	color: #000;
 }
 .ththanhtoan{
-	/* margin-left: 100px; */
+	padding-top: 30px;
 }
 .btn-ththanhtoan{
 	text-decoration: none;
-	text-transform: uppercase;
-	padding: 15px 131px;
-	background-color: #D26E4B;
+    text-transform: uppercase;
+    background-color: #D26E4B;
     color: #fff;
     font-weight: bold;
-    margin-top: 20px;
+    display: block;
+    width: 60%;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto
 }
 .btn-ththanhtoan:hover{
 	color: var(--white-color);
     background-color: #A8583C;
 }
+
+/* cart */
+.giohang{
+	position: fixed;
+	height: 100vh;
+	width: 750px;
+	right: 0;
+	top: 0;
+	background-color: rgb(187 214 175);
+	z-index: 9999999;
+	overflow-y: scroll;
+	right: -100%;
+	transition: all 0.5s ease;
+}
+/*  */
+
 /* Giỏ hàng 2 */
 .check-detail1{
 	color: black;
@@ -1529,7 +1605,13 @@ hr{
 .text-content-tt{
 	padding: 0 15px;
 }
-
+.text-content-tt table tr th{
+	border-bottom: 1px solid #ddd;
+}
+.text-content-tt table tr td{
+	border-bottom: 1px solid #ddd;
+	padding: 18px;
+}
 .input-radio{
 	color: #000;
 }
@@ -1680,20 +1762,23 @@ hr{
 .icon-link{
 	padding: 0 24px;
 }
-.icon-link{
-	margin-top: 3px;
-}
 .icon-link a i:hover{
 	color: #000;
 }
 .themvaogio{
 	font-weight: bold;
+	font-size: 1rem;
+    color: var(--white-color);
+	cursor: pointer;
 }
 .themvaogio:hover{
 	color: #000;
 }
+.check-themvaogio{
+	display: none;
+}
 
-
+/*  */
 .boxd-child{
 	position: relative;
 }
@@ -1725,11 +1810,15 @@ hr{
 }
 .themvaogio2{
 	font-weight: bold;
-	font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding-left: 15px;
+	color: var(--white-color);
+	cursor: pointer;
 }
 .themvaogio2:hover{
 	color: #000;
 }
+/*  */
 /*  */
 .list-content .boxa img{
 	position: relative;
@@ -1765,7 +1854,9 @@ hr{
 }
 .quick-view{
 	font-size: 0.9rem;
-	font-weight: bold;
+    font-weight: bold;
+    color: var(--white-color);
+    cursor: pointer;
 }
 .quick-view:hover{
 	color: #000;

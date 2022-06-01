@@ -10,10 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/fonts/">
 	<link rel="stylesheet" type="text/css" href="./assets/CSS/slick.css"/>
 	<link rel="icon"  href="assets/img/Screenshot 2022-05-13 173748.png">
-	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="./assets/js/slick.min.js"></script>
-	<script type="text/javascript" src="./assets/js/main.js"></script>
 </head>
 <body>
 	<div id="main">
@@ -95,7 +91,7 @@
 
 					<div class="login-shopping">
 						<div id="btn-login"><a href="#"><img src="assets/img/login.png"></a></div>
-						<div><a href="giohang.html" title="Cart"><img src="assets/img/shopping.png"></a></div>
+						<div id="btn-cart"><a title="Cart"><img src="assets/img/shopping.png"></a></div>
 					</div>
 				</div>
 			</div>
@@ -141,7 +137,7 @@
 							<a href="chitiet.html">
 								<img class="imgct" src="assets/img/Xe Máy Điện JVC Vespa Đèn Tròn.jpg">
 								<div class="more">
-									<a href="chitiet.html" class="quick-view">THÊM VÀO GIỎ</a>
+									<label for="checkthemvaogio-spxx" href="#" class="quick-view">THÊM VÀO GIỎ</label>
 									<div class="icon-links">
 										<a href="#"><i class="fa-solid fa-heart"></i></a>
 										<a href="chitiet.html"><i class="fa-solid fa-eye"></i></a>
@@ -150,6 +146,7 @@
 								</div>
 							</a>
 						</div>
+						<input type="checkbox" name="" class="check-themvaogio" id="checkthemvaogio-spxx">
 						<p class="sanpham-text">
 							<span>Xe Máy Điện JVC Vespa Đèn Tròn <br></span>
 							<strong>
@@ -716,4 +713,9 @@
 		</div>
 	</div>
 </body>
+<script src="assets/js/cart3.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>
 </html>

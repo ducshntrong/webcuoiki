@@ -46,6 +46,27 @@ $(document).ready(function() {
 	$('.submit').click(function(e) {
 		alert("Gửi thành công")
 	})
+
+	$('.themvaogio').click(function(e) {
+		$('.shopping-cart').css('display', 'flex')
+		$('.shopping-cart').css('display', 'block')
+		$('.cart-container').css('display', 'none')
+	})
+	$('.themvaogio2').click(function(e) {
+		$('.shopping-cart').css('display', 'flex')
+		$('.shopping-cart').css('display', 'block')
+		$('.cart-container').css('display', 'none')
+	})
+	//cart
+	// $('.close-form1').click(function(e) {
+	// 	$('.giohang').css('display', 'none')
+	// })
+	// $('#btn-cart').click(function(e) {
+	// 	$('.giohang').css('display', 'block')
+	// })
+	// $('.btn-xemsp').click(function(e) {
+	// 	$('.giohang').css('display', 'none')
+	// })
 })
 
 
@@ -101,23 +122,104 @@ $(document).ready(function(){
 	});
 });
 
-//btn tăng gảim số lượng
-$('input.input-qty').each(function() {
-  var $this = $(this),
-    qty = $this.parent().find('.is-form'),
-    min = Number($this.attr('min')),
-    max = Number($this.attr('max'))
-  if (min == 0) {
-    var d = 0
-  } else d = min
-  $(qty).on('click', function() {
-    if ($(this).hasClass('minus')) {
-      if (d > min) d += -1
-    } else if ($(this).hasClass('plus')) {
-      var x = Number($this.val()) + 1
-      if (x <= max) d += 1
-    }
-    $this.attr('value', d).val(d)
-  })
+
+// ------------Cart1------------
+const btn = document.querySelectorAll(".sanphamnoibat .boxc input")
+// console.log(btn)
+btn.forEach(function(button, index){
+	button.addEventListener("click",function(event){{
+		var btnItem = event.target;
+		var product = btnItem.parentElement;
+		var productImg = product.querySelector(".sanphamnoibat .boxc .boxc-child img").src
+		var productName =  product.querySelector(".sanphamnoibat .boxc .sanpham-text > span").innerText
+		var productPrice =  product.querySelector(".sanphamnoibat .boxc .sanpham-text strong .gia-giam").innerText
+		// console.log(productPrice,productImg,productName);
+		addcart(productPrice,productImg,productName)
+	}});
+});
+function addcart(productPrice,productImg,productName) {
+	var addtr = document.createElement("tr") 
+	var cartItem = document.querySelectorAll(".donhang tbody tr")
+	for (var i=0; i<cartItem.length;i++){
+		var productT = document.querySelectorAll(".titlesp")
+		if(productT[i].innerHTML == productName){
+			alert("Sản phẩm của bạn đã có trong giỏ hàng")
+			return
+		}
+	}
+	var trcontent = '<tr><td class="product-icon"><a><i class="fa-solid fa-circle-xmark"></i></a></td><td class="product-img"><a href="chitiet.html"><img class="img-giohang" src="'+productImg+'" alt=""></a></td><td class="product-namesp"><a href="chitiet.html"><span class="titlesp">'+productName+'</span></a></td><td class="product-price giaca"><strong><span class="gia-giam">'+productPrice+'</span><sup>đ</sup><br></strong></td><td class="product-quality"><input type="number" value="1" min="1" max="10"></td><td class="product-total giaca"><strong><span class="gia-giam">'+productPrice+'</span><sup>đ</sup><br></strong></td></tr>'
+	addtr.innerHTML = trcontent
+	var cartTable = document.querySelector("tbody")
+	// console.log(cartTable)
+	cartTable.append(addtr)
+	cartTotal()
+	deleteCart()
+}
+// Tổng tiền
+function cartTotal() {
+	var cartItem = document.querySelectorAll(".donhang tbody tr")
+	var totalC = 0
+	var soluong = 0
+	// console.log(cartItem.length)
+	for (var i=0; i<cartItem.length;i++){
+		var inputValue = cartItem[i].querySelector(".donhang input").value
+		// console.log(inputValue)
+		var productPrice = cartItem[i].querySelector(".donhang strong span").innerText	
+		var newsProductPrice = productPrice.split('.').join('');
+		// console.log(newsProductPrice)
+		totalA = newsProductPrice*inputValue
+		totalC = totalC+totalA
+		totalD = totalA.toLocaleString('de-DE')//Tổng tiền của sp
+	}
+	
+	var cartTotalA = document.querySelector(".num-soluong strong span")
+	cartTotalA.innerHTML = totalC.toLocaleString('de-DE')//Tổng tiền của all sp
+	inputChange()
+}
+
+// Xoá sp trong cart
+function deleteCart(){
+	var cartItem = document.querySelectorAll(".donhang tbody tr")
+    for (var i=0; i<cartItem.length;i++){
+		var productT = document.querySelectorAll(".product-icon .fa-circle-xmark")
+        productT[i].addEventListener("click", function(event){
+            var cartDelete = event.target
+            var cartItems = cartDelete.parentElement.parentElement.parentElement
+			cartItems.remove()
+			console.log(cartItems)
+			cartTotal()
+        })
+	}
+}
+
+function inputChange() {
+	var cartItem = document.querySelectorAll(".donhang tbody tr")
+    for (var i=0; i<cartItem.length;i++){
+		var inputValue = cartItem[i].querySelector(".donhang input")
+		var capnhatsp = document.querySelector(".btn-capnhatcart")
+		capnhatsp.addEventListener("click", function(){
+			inputValue.addEventListener("change", function(){
+			})
+			cartTotal()
+		})
+	}
+}
+
+const cartShow = document.querySelector("#btn-cart")
+cartShow.addEventListener("click", function(){
+	document.querySelector(".giohang").style.right = "0"
+})
+const cartClose = document.querySelector(".close-form1")
+cartClose.addEventListener("click", function(){
+	document.querySelector(".giohang").style.right = "-100%"
+})
+
+const cartBack = document.querySelector(".btn-xemsp")
+cartBack.addEventListener("click", function(){
+	document.querySelector(".giohang").style.right = "-100%"
+})
+const btnBackhome = document.querySelector(".buttton-backshop")
+btnBackhome.addEventListener("click", function(){
+	document.querySelector(".giohang").style.right = "-100%"
 })
 
