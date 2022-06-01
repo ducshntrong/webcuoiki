@@ -1614,6 +1614,7 @@ hr{
 }
 
 .text-thanhtoan{
+	width: 50%;
 	border: 2px solid #446084;
 	margin-left: 25px;
 	border-radius: 5px;
