@@ -46,6 +46,8 @@ function cartTotal1() {
 		totalA1 = newsProductPrice1*inputValue1
 		totalC1 = totalC1+totalA1
 		totalD1 = totalA1.toLocaleString('de-DE')//Tổng tiền của sp
+		var cartPricesp1 = document.querySelector(".product-total .gia-giam")
+		cartPricesp1.innerHTML = totalD1
 	}
 	
 	var cartTotalA1 = document.querySelector(".num-soluong strong span")
