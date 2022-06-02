@@ -1762,13 +1762,16 @@ hr{
 
 /* ------ */
 .list1{
-	/* display: none; */
+	display: none;
 }
 .list2{
 	display: none;
 }
 .list3{
 	display: none;
+}
+.list4{
+	display: block;
 }
 .list-content{
 	width: 70%;
@@ -1873,6 +1876,12 @@ hr{
 	position: relative;
 	width: 210px;
 	height: 210px;
+}
+
+.list-content .boxa .imgctxx{
+	position: relative;
+	width: 210px;
+	height: 160px;
 }
 
 .boxa .more{

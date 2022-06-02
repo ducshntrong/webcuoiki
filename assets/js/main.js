@@ -67,6 +67,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'none')
 		$('.list2').css('display', 'block')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'none')
 		$('.btnphobien').css('background-color', '#036D03')
 		$('.btnphobien').css('color', '#fff')
 		$('.btn-primary').css('background-color', '#fff')
@@ -75,9 +76,10 @@ $(document).ready(function() {
 		$('.btnbanchay').css('color', '#000')
 	})
 	$('.btn-primary').click(function(e) {
-		$('.list1').css('display', 'block')
+		$('.list1').css('display', 'none')
 		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'block')
 		$('.btn-primary').css('background-color', '#036D03')
 		$('.btn-primary').css('color', '#fff')
 		$('.btnphobien').css('background-color', '#fff')
@@ -89,6 +91,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'none')
 		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'block')
+		$('.list4').css('display', 'none')
 		$('.btnbanchay').css('background-color', '#036D03')
 		$('.btnbanchay').css('color', '#fff')
 		$('.btn-primary').css('background-color', '#fff')
@@ -113,6 +116,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'block')
 		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'none')
 		$('.num1').css('background-color', '#036D03')
 		$('.num2').css('background-color', '#fff')
 		$('.num3').css('background-color', '#fff')
@@ -128,6 +132,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'none')
 		$('.list2').css('display', 'block')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'none')
 		$('.num2').css('background-color', '#036D03')
 		$('.num1').css('background-color', '#fff')
 		$('.num3').css('background-color', '#fff')
@@ -143,6 +148,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'none')
 		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'block')
+		$('.list4').css('display', 'none')
 		$('.num3').css('background-color', '#036D03')
 		$('.num2').css('background-color', '#fff')
 		$('.num1').css('background-color', '#fff')
@@ -156,8 +162,9 @@ $(document).ready(function() {
 	})
 	$('.num4').click(function(e) {
 		$('.list1').css('display', 'none')
-		$('.list2').css('display', 'block')
+		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'block')
 		$('.num4').css('background-color', '#036D03')
 		$('.num2').css('background-color', '#fff')
 		$('.num1').css('background-color', '#fff')
@@ -173,6 +180,7 @@ $(document).ready(function() {
 		$('.list1').css('display', 'block')
 		$('.list2').css('display', 'none')
 		$('.list3').css('display', 'none')
+		$('.list4').css('display', 'none')
 		$('.num5').css('background-color', '#036D03')
 		$('.num2').css('background-color', '#fff')
 		$('.num1').css('background-color', '#fff')
@@ -185,14 +193,25 @@ $(document).ready(function() {
 		$('.number3').css('color', '#555')
 	})
 	//Chi tiết sp-img
-	$('.chitietsp-img1').click(function(){
-		$('.modal__overlay').css('display', 'block')
+	$('.imgct').click(function(){
+		$('.modal__overlay1').css('display', 'block')
+		$('.imgct11').css('display', 'block')
+	})
+	$('.cl-chitiet').click(function(){
+		$('.modal__overlay1').css('display', 'none')
 	})
 })
 
 
 
 $(document).ready(function() {
+	$('.sanphamnoibat3').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		cssEase: 'linear'
+	});
 	$('.sanphamnoibat1').slick({
 		slidesToShow: 3,
 		slidesToScroll: 3,
