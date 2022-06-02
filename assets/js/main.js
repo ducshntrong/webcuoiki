@@ -184,6 +184,10 @@ $(document).ready(function() {
 		$('.number4').css('color', '#555')
 		$('.number3').css('color', '#555')
 	})
+	//Chi tiết sp-img
+	$('.chitietsp-img1').click(function(){
+		$('.modal__overlay').css('display', 'block')
+	})
 })
 
 
