@@ -856,6 +856,12 @@ h5{
 .auto-form__controls-back{
 	margin-right: 8px;
 }
+.btn-back-signin{
+	width: 25% !important;
+}
+.btn-back-register{
+	width: 25% !important;
+}
 
 .auth-form__socials{
 	background-color: #F0F1F3;

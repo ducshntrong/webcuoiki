@@ -72,11 +72,13 @@
 }
 
 .btn.btn--size-s{
+	width: 47%;
 	height: 32px;
-	font-size: 15px;
+	font-size: 0.87rem;
 }
 
 .btn.btn--primary{
+	width: 25%;
 	color: #fff;
 	background-color: var(--primary-color);
 }
