@@ -2086,7 +2086,6 @@ hr{
 	color: #000;
 }
 .themvaogio{
-	margin-top: 5px;
 	margin-left: 20px;
 }
 .btnthemvaogio:hover, .btn-muangay:hover{
@@ -2094,20 +2093,27 @@ hr{
 }
 .btnthemvaogio{
 	text-decoration: none;
-	padding: 8px 20px;
-	color: var(--white-color);
-	background-color: var(--primary-color);
-	font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: block;
+    width: 135%;
+    text-align: center;
+    padding: 5px;
 }
 .muangay{
 	margin: 30px 10px;
 }
 .btn-muangay{
 	text-decoration: none;
-	padding: 15px 150px;
-	color: var(--white-color);
-	background-color: var(--primary-color);
-	font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
 }
 .tanggiam-them{
 	display: flex;
